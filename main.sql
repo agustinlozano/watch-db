@@ -460,3 +460,148 @@ CREATE TABLE `Crown_function` (
   `function_name` MEDIUMTEXT NULL DEFAULT NULL,
   PRIMARY KEY (`id_crown_function`)
 );
+
+-- ---
+-- Foreign Keys 
+-- ---
+
+ALTER TABLE `Case` ADD FOREIGN KEY (id_crystal) REFERENCES `Crystal` (`id_crystal`);
+ALTER TABLE `Case` ADD FOREIGN KEY (id_material) REFERENCES `Material` (`id_material`);
+ALTER TABLE `Case` ADD FOREIGN KEY (id_color) REFERENCES `Color` (`id_color`);
+ALTER TABLE `Case` ADD FOREIGN KEY (id_pushers) REFERENCES `Pusher` (`id_pusher`);
+ALTER TABLE `Case` ADD FOREIGN KEY (id_shape) REFERENCES `Shape` (`id_shape`);
+ALTER TABLE `Dial` ADD FOREIGN KEY (id_dial_type) REFERENCES `Dial_type` (`id_dial_type`);
+ALTER TABLE `Dial` ADD FOREIGN KEY (id_index) REFERENCES `Index` (`id_index`);
+ALTER TABLE `Dial` ADD FOREIGN KEY (id_material) REFERENCES `Material` (`id_material`);
+ALTER TABLE `Dial` ADD FOREIGN KEY (id_hand) REFERENCES `Hand` (`id_hand`);
+ALTER TABLE `Dial` ADD FOREIGN KEY (id_color) REFERENCES `Color` (`id_color`);
+ALTER TABLE `Band` ADD FOREIGN KEY (id_band_type) REFERENCES `Band_type` (`id_band_type`);
+ALTER TABLE `Band` ADD FOREIGN KEY (id_clasp) REFERENCES `Clasp` (`id_clasp`);
+ALTER TABLE `Band` ADD FOREIGN KEY (id_material) REFERENCES `Material` (`id_material`);
+ALTER TABLE `Band` ADD FOREIGN KEY (id_color) REFERENCES `Color` (`id_color`);
+ALTER TABLE `Movement` ADD FOREIGN KEY (id_owner) REFERENCES `Owner` (`id_owner`);
+ALTER TABLE `Movement` ADD FOREIGN KEY (id_movement_type) REFERENCES `Movement_type` (`id_movement_type`);
+ALTER TABLE `Movement` ADD FOREIGN KEY (id_battery) REFERENCES `Battery` (`id_battery`);
+ALTER TABLE `Caseback` ADD FOREIGN KEY (id_shape) REFERENCES `Shape` (`id_shape`);
+ALTER TABLE `Caseback` ADD FOREIGN KEY (id_backcase_design) REFERENCES `Backcase_design` (`id_backcase_design`);
+ALTER TABLE `Caseback` ADD FOREIGN KEY (id_opening_system) REFERENCES `Opening_system` (`id_opening_system`);
+ALTER TABLE `Caseback` ADD FOREIGN KEY (id_material) REFERENCES `Material` (`id_material`);
+ALTER TABLE `Caseback` ADD FOREIGN KEY (id_color) REFERENCES `Color` (`id_color`);
+ALTER TABLE `Dimension` ADD FOREIGN KEY (id_dimension_type) REFERENCES `Dimension_type` (`id_dimension_type`);
+ALTER TABLE `Dimension` ADD FOREIGN KEY (id_length_unit) REFERENCES `Length_unit` (`id_length_unit`);
+ALTER TABLE `Basic_info` ADD FOREIGN KEY (id_manufacturer_county) REFERENCES `Manufacturer_country` (`id_manufacturer_country`);
+ALTER TABLE `Basic_info` ADD FOREIGN KEY (id_brand) REFERENCES `Brand` (`id_brand`);
+ALTER TABLE `Basic_info` ADD FOREIGN KEY (id_style) REFERENCES `Style` (`id_style`);
+ALTER TABLE `Basic_info` ADD FOREIGN KEY (id_gender) REFERENCES `Gender` (`id_gender`);
+ALTER TABLE `Complication` ADD FOREIGN KEY (id_complication_type) REFERENCES `Complication_type` (`id_complication_type`);
+ALTER TABLE `Crown` ADD FOREIGN KEY (id_crown_type) REFERENCES `Crown_type` (`id_crown_type`);
+ALTER TABLE `Crown` ADD FOREIGN KEY (id_crown_function) REFERENCES `Crown_function` (`id_crown_function`);
+
+-- ---
+-- Table Properties
+-- ---
+
+-- ALTER TABLE `Case` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Crystal` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Material` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Color` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Pusher` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Shape` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Dial` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Dial_type` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Index` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Hand` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Band` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Clasp` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Band_type` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Movement` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Battery` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Owner` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Movement_type` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Caseback` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Backcase_design` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Opening_system` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Dimension` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Dimension_type` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Length_unit` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Basic_info` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Manufacturer_country` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Style` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Brand` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Gender` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Complication` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Complication_type` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Crown` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Crown_type` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+-- ALTER TABLE `Crown_function` ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
+
+-- ---
+-- Test Data
+-- ---
+
+-- INSERT INTO `Case` (`id_case`,`id_crystal`,`id_material`,`id_color`,`id_pushers`,`id_shape`) VALUES
+-- ('','','','','','');
+-- INSERT INTO `Crystal` (`id_crystal`,`crystal_type`) VALUES
+-- ('','');
+-- INSERT INTO `Material` (`id_material`,`material_type`) VALUES
+-- ('','');
+-- INSERT INTO `Color` (`id_color`,`color_type`) VALUES
+-- ('','');
+-- INSERT INTO `Pusher` (`id_pusher`,`pusher_type`) VALUES
+-- ('','');
+-- INSERT INTO `Shape` (`id_shape`,`shape_type`) VALUES
+-- ('','');
+-- INSERT INTO `Dial` (`id_dial`,`id_dial_type`,`id_index`,`id_material`,`id_hand`,`id_color`,`luminance`) VALUES
+-- ('','','','','','','');
+-- INSERT INTO `Dial_type` (`id_dial_type`,`dial_name`) VALUES
+-- ('','');
+-- INSERT INTO `Index` (`id_index`,`index_type`) VALUES
+-- ('','');
+-- INSERT INTO `Hand` (`id_hand`,`hand_type`) VALUES
+-- ('','');
+-- INSERT INTO `Band` (`id_band`,`id_band_type`,`id_clasp`,`id_material`,`id_color`) VALUES
+-- ('','','','','');
+-- INSERT INTO `Clasp` (`id_clasp`,`clasp_type`) VALUES
+-- ('','');
+-- INSERT INTO `Band_type` (`id_band_type`,`band_name`) VALUES
+-- ('','');
+-- INSERT INTO `Movement` (`id_movement`,`id_owner`,`id_movement_type`,`id_battery`,`bettery_life`) VALUES
+-- ('','','','','');
+-- INSERT INTO `Battery` (`id_battery`,`battery_type`) VALUES
+-- ('','');
+-- INSERT INTO `Owner` (`id_owner`,`owner_name`) VALUES
+-- ('','');
+-- INSERT INTO `Movement_type` (`id_movement_type`,`movement_name`) VALUES
+-- ('','');
+-- INSERT INTO `Caseback` (`id_caseback`,`id_shape`,`id_backcase_design`,`id_opening_system`,`id_material`,`id_color`) VALUES
+-- ('','','','','','');
+-- INSERT INTO `Backcase_design` (`id_backcase_design`,`backcase_design_type`) VALUES
+-- ('','');
+-- INSERT INTO `Opening_system` (`id_opening_system`,`opening_system_type`) VALUES
+-- ('','');
+-- INSERT INTO `Dimension` (`id_dimension`,`id_dimension_type`,`id_length_unit`,`value`) VALUES
+-- ('','','','');
+-- INSERT INTO `Dimension_type` (`id_dimension_type`,`dimension_name`) VALUES
+-- ('','');
+-- INSERT INTO `Length_unit` (`id_length_unit`,`length_unit`) VALUES
+-- ('','');
+-- INSERT INTO `Basic_info` (`id_info`,`id_manufacturer_county`,`id_brand`,`id_style`,`id_gender`,`water_resistance`) VALUES
+-- ('','','','','','');
+-- INSERT INTO `Manufacturer_country` (`id_manufacturer_country`,`country_name`) VALUES
+-- ('','');
+-- INSERT INTO `Style` (`id_style`,`style_type`) VALUES
+-- ('','');
+-- INSERT INTO `Brand` (`id_brand`,`brand_name`) VALUES
+-- ('','');
+-- INSERT INTO `Gender` (`id_gender`,`gender_type`) VALUES
+-- ('','');
+-- INSERT INTO `Complication` (`id_complication`,`id_complication_type`,`complication_name`) VALUES
+-- ('','','');
+-- INSERT INTO `Complication_type` (`id_complication_type`,`complication_name`) VALUES
+-- ('','');
+-- INSERT INTO `Crown` (`id_crown`,`id_crown_type`,`id_crown_function`) VALUES
+-- ('','','');
+-- INSERT INTO `Crown_type` (`id_crown_type`,`crown_name`) VALUES
+-- ('','');
+-- INSERT INTO `Crown_function` (`id_crown_function`,`function_name`) VALUES
+-- ('','');
