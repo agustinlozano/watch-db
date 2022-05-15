@@ -283,3 +283,44 @@ CREATE TABLE `Opening_system` (
   `opening_system_type` MEDIUMTEXT NULL DEFAULT NULL,
   PRIMARY KEY (`id_opening_system`)
 );
+
+-- ---
+-- Table 'Dimension'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `Dimension`;
+		
+CREATE TABLE `Dimension` (
+  `id_dimension` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `id_dimension_type` INTEGER NULL DEFAULT NULL,
+  `id_length_unit` INTEGER NULL DEFAULT NULL,
+  `value` INTEGER NULL DEFAULT NULL,
+  PRIMARY KEY (`id_dimension`)
+);
+
+-- ---
+-- Table 'Dimension_type'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `Dimension_type`;
+		
+CREATE TABLE `Dimension_type` (
+  `id_dimension_type` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `dimension_name` MEDIUMTEXT NULL DEFAULT NULL,
+  PRIMARY KEY (`id_dimension_type`)
+);
+
+-- ---
+-- Table 'Length_unit'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `Length_unit`;
+		
+CREATE TABLE `Length_unit` (
+  `id_length_unit` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `length_unit` INTEGER NULL DEFAULT NULL,
+  PRIMARY KEY (`id_length_unit`)
+);
