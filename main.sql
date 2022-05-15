@@ -1,14 +1,17 @@
 -- ---
 -- Globals
 -- ---
+
 -- SET SQL_MODE="NO_AUTO_VALUE_ON_ZERO";
 -- SET FOREIGN_KEY_CHECKS=0;
+
 -- ---
 -- Table 'Case'
 -- 
 -- ---
-DROP TABLE IF EXISTS `Case`;
 
+DROP TABLE IF EXISTS `Case`;
+		
 CREATE TABLE `Case` (
   `id_case` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
   `id_crystal` INTEGER NULL DEFAULT NULL,
@@ -23,8 +26,9 @@ CREATE TABLE `Case` (
 -- Table 'Crystal'
 -- 
 -- ---
-DROP TABLE IF EXISTS `Crystal`;
 
+DROP TABLE IF EXISTS `Crystal`;
+		
 CREATE TABLE `Crystal` (
   `id_crystal` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
   `crystal_type` MEDIUMTEXT NULL DEFAULT NULL,
@@ -35,8 +39,9 @@ CREATE TABLE `Crystal` (
 -- Table 'Material'
 -- 
 -- ---
-DROP TABLE IF EXISTS `Material`;
 
+DROP TABLE IF EXISTS `Material`;
+		
 CREATE TABLE `Material` (
   `id_material` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
   `material_type` MEDIUMTEXT NULL DEFAULT NULL,
@@ -47,11 +52,12 @@ CREATE TABLE `Material` (
 -- Table 'Color'
 -- 
 -- ---
-DROP TABLE IF EXISTS `Color`;
 
+DROP TABLE IF EXISTS `Color`;
+		
 CREATE TABLE `Color` (
   `id_color` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
-  `shape_type` MEDIUMTEXT NULL DEFAULT NULL,
+  `color_type` MEDIUMTEXT NULL DEFAULT NULL,
   PRIMARY KEY (`id_color`)
 );
 
@@ -59,11 +65,12 @@ CREATE TABLE `Color` (
 -- Table 'Pusher'
 -- 
 -- ---
-DROP TABLE IF EXISTS `Pusher`;
 
+DROP TABLE IF EXISTS `Pusher`;
+		
 CREATE TABLE `Pusher` (
   `id_pusher` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
-  `type_pusher` MEDIUMTEXT NULL DEFAULT NULL,
+  `pusher_type` MEDIUMTEXT NULL DEFAULT NULL,
   PRIMARY KEY (`id_pusher`)
 );
 
@@ -71,8 +78,9 @@ CREATE TABLE `Pusher` (
 -- Table 'Shape'
 -- 
 -- ---
-DROP TABLE IF EXISTS `Shape`;
 
+DROP TABLE IF EXISTS `Shape`;
+		
 CREATE TABLE `Shape` (
   `id_shape` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
   `shape_type` MEDIUMTEXT NULL DEFAULT NULL,
