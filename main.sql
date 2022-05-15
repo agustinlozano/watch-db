@@ -185,3 +185,58 @@ CREATE TABLE `Band_type` (
   `band_name` MEDIUMTEXT NULL DEFAULT NULL,
   PRIMARY KEY (`id_band_type`)
 );
+
+-- ---
+-- Table 'Movement'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `Movement`;
+		
+CREATE TABLE `Movement` (
+  `id_movement` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `id_owner` INTEGER NULL DEFAULT NULL,
+  `id_movement_type` INTEGER NULL DEFAULT NULL,
+  `id_battery` INTEGER NULL DEFAULT NULL,
+  `bettery_life` INTEGER NULL DEFAULT NULL,
+  PRIMARY KEY (`id_movement`)
+);
+
+-- ---
+-- Table 'Battery'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `Battery`;
+		
+CREATE TABLE `Battery` (
+  `id_battery` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `battery_type` MEDIUMTEXT NULL DEFAULT NULL,
+  PRIMARY KEY (`id_battery`)
+);
+
+-- ---
+-- Table 'Owner'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `Owner`;
+		
+CREATE TABLE `Owner` (
+  `id_owner` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `owner_name` MEDIUMTEXT NULL DEFAULT NULL,
+  PRIMARY KEY (`id_owner`)
+);
+
+-- ---
+-- Table 'Movement_type'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `Movement_type`;
+		
+CREATE TABLE `Movement_type` (
+  `id_movement_type` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `movement_name` MEDIUMTEXT NULL DEFAULT NULL,
+  PRIMARY KEY (`id_movement_type`)
+);
