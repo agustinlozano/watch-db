@@ -40,7 +40,7 @@ CREATE TABLE `Crystal` (
 -- 
 -- ---
 
-DROP TABLE IF EXISTS `Material`;g
+DROP TABLE IF EXISTS `Material`;
 		
 CREATE TABLE `Material` (
   `id_material` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
@@ -97,9 +97,9 @@ DROP TABLE IF EXISTS `Dial`;
 CREATE TABLE `Dial` (
   `id_dial` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
   `id_dial_type` INTEGER NULL DEFAULT NULL,
-  `id_indexes` INTEGER NULL DEFAULT NULL,
+  `id_index` INTEGER NULL DEFAULT NULL,
   `id_material` INTEGER NULL DEFAULT NULL,
-  `id_hands` INTEGER NULL DEFAULT NULL,
+  `id_hand` INTEGER NULL DEFAULT NULL,
   `id_color` INTEGER NULL DEFAULT NULL,
   `luminance` BINARY NULL DEFAULT NULL,
   PRIMARY KEY (`id_dial`)
@@ -119,27 +119,27 @@ CREATE TABLE `Dial_type` (
 );
 
 -- ---
--- Table 'Indexes'
+-- Table 'Index'
 -- 
 -- ---
 
-DROP TABLE IF EXISTS `Indexes`;
+DROP TABLE IF EXISTS `Index`;
 		
-CREATE TABLE `Indexes` (
-  `id_indexes` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
-  `indexes_type` MEDIUMTEXT NULL DEFAULT NULL,
-  PRIMARY KEY (`id_indexes`)
+CREATE TABLE `Index` (
+  `id_index` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `index_type` MEDIUMTEXT NULL DEFAULT NULL,
+  PRIMARY KEY (`id_index`)
 );
 
 -- ---
--- Table 'Hands'
+-- Table 'Hand'
 -- 
 -- ---
 
-DROP TABLE IF EXISTS `Hands`;
+DROP TABLE IF EXISTS `Hand`;
 		
-CREATE TABLE `Hands` (
-  `id_hands` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
-  `hands_type` MEDIUMTEXT NULL DEFAULT NULL,
-  PRIMARY KEY (`id_hands`)
+CREATE TABLE `Hand` (
+  `id_hand` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `hand_type` MEDIUMTEXT NULL DEFAULT NULL,
+  PRIMARY KEY (`id_hand`)
 );
