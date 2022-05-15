@@ -324,3 +324,72 @@ CREATE TABLE `Length_unit` (
   `length_unit` INTEGER NULL DEFAULT NULL,
   PRIMARY KEY (`id_length_unit`)
 );
+
+-- ---
+-- Table 'Basic_info'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `Basic_info`;
+		
+CREATE TABLE `Basic_info` (
+  `id_info` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `id_manufacturer_county` INTEGER NULL DEFAULT NULL,
+  `id_brand` INTEGER NULL DEFAULT NULL,
+  `id_style` INTEGER NULL DEFAULT NULL,
+  `id_gender` INTEGER NULL DEFAULT NULL,
+  `water_resistance` BINARY NULL DEFAULT NULL,
+  PRIMARY KEY (`id_info`)
+);
+
+-- ---
+-- Table 'Manufacturer_country'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `Manufacturer_country`;
+		
+CREATE TABLE `Manufacturer_country` (
+  `id_manufacturer_country` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `country_name` MEDIUMTEXT NULL DEFAULT NULL,
+  PRIMARY KEY (`id_manufacturer_country`)
+);
+
+-- ---
+-- Table 'Style'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `Style`;
+		
+CREATE TABLE `Style` (
+  `id_style` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `style_type` MEDIUMTEXT NULL DEFAULT NULL,
+  PRIMARY KEY (`id_style`)
+);
+
+-- ---
+-- Table 'Brand'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `Brand`;
+		
+CREATE TABLE `Brand` (
+  `id_brand` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `brand_name` MEDIUMTEXT NULL DEFAULT NULL,
+  PRIMARY KEY (`id_brand`)
+);
+
+-- ---
+-- Table 'Gender'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `Gender`;
+		
+CREATE TABLE `Gender` (
+  `id_gender` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `gender_type` MEDIUMTEXT NULL DEFAULT NULL,
+  PRIMARY KEY (`id_gender`)
+);
