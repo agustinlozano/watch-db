@@ -393,3 +393,70 @@ CREATE TABLE `Gender` (
   `gender_type` MEDIUMTEXT NULL DEFAULT NULL,
   PRIMARY KEY (`id_gender`)
 );
+
+-- ---
+-- Table 'Complication'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `Complication`;
+		
+CREATE TABLE `Complication` (
+  `id_complication` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `id_complication_type` INTEGER NULL DEFAULT NULL,
+  `complication_name` MEDIUMTEXT NULL DEFAULT NULL,
+  PRIMARY KEY (`id_complication`)
+);
+
+-- ---
+-- Table 'Complication_type'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `Complication_type`;
+		
+CREATE TABLE `Complication_type` (
+  `id_complication_type` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `complication_name` MEDIUMTEXT NULL DEFAULT NULL,
+  PRIMARY KEY (`id_complication_type`)
+);
+
+-- ---
+-- Table 'Crown'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `Crown`;
+		
+CREATE TABLE `Crown` (
+  `id_crown` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `id_crown_type` INTEGER NULL DEFAULT NULL,
+  `id_crown_function` INTEGER NULL DEFAULT NULL,
+  PRIMARY KEY (`id_crown`)
+);
+
+-- ---
+-- Table 'Crown_type'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `Crown_type`;
+		
+CREATE TABLE `Crown_type` (
+  `id_crown_type` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `crown_name` MEDIUMTEXT NULL DEFAULT NULL,
+  PRIMARY KEY (`id_crown_type`)
+);
+
+-- ---
+-- Table 'Crown_function'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `Crown_function`;
+		
+CREATE TABLE `Crown_function` (
+  `id_crown_function` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `function_name` MEDIUMTEXT NULL DEFAULT NULL,
+  PRIMARY KEY (`id_crown_function`)
+);
