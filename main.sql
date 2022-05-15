@@ -240,3 +240,46 @@ CREATE TABLE `Movement_type` (
   `movement_name` MEDIUMTEXT NULL DEFAULT NULL,
   PRIMARY KEY (`id_movement_type`)
 );
+
+-- ---
+-- Table 'Caseback'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `Caseback`;
+		
+CREATE TABLE `Caseback` (
+  `id_caseback` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `id_shape` INTEGER NULL DEFAULT NULL,
+  `id_backcase_design` INTEGER NULL DEFAULT NULL,
+  `id_opening_system` INTEGER NULL DEFAULT NULL,
+  `id_material` INTEGER NULL DEFAULT NULL,
+  `id_color` INTEGER NULL DEFAULT NULL,
+  PRIMARY KEY (`id_caseback`)
+);
+
+-- ---
+-- Table 'Backcase_design'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `Backcase_design`;
+		
+CREATE TABLE `Backcase_design` (
+  `id_backcase_design` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `backcase_design_type` MEDIUMTEXT NULL DEFAULT NULL,
+  PRIMARY KEY (`id_backcase_design`)
+);
+
+-- ---
+-- Table 'Opening_system'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `Opening_system`;
+		
+CREATE TABLE `Opening_system` (
+  `id_opening_system` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `opening_system_type` MEDIUMTEXT NULL DEFAULT NULL,
+  PRIMARY KEY (`id_opening_system`)
+);
