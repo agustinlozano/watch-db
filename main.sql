@@ -143,3 +143,45 @@ CREATE TABLE `Hand` (
   `hand_type` MEDIUMTEXT NULL DEFAULT NULL,
   PRIMARY KEY (`id_hand`)
 );
+
+-- ---
+-- Table 'Band'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `Band`;
+		
+CREATE TABLE `Band` (
+  `id_band` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `id_band_type` INTEGER NULL DEFAULT NULL,
+  `id_clasp` INTEGER NULL DEFAULT NULL,
+  `id_material` INTEGER NULL DEFAULT NULL,
+  `id_color` INTEGER NULL DEFAULT NULL,
+  PRIMARY KEY (`id_band`)
+);
+
+-- ---
+-- Table 'Clasp'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `Clasp`;
+		
+CREATE TABLE `Clasp` (
+  `id_clasp` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `clasp_type` MEDIUMTEXT NULL DEFAULT NULL,
+  PRIMARY KEY (`id_clasp`)
+);
+
+-- ---
+-- Table 'Band_type'
+-- 
+-- ---
+
+DROP TABLE IF EXISTS `Band_type`;
+		
+CREATE TABLE `Band_type` (
+  `id_band_type` INTEGER NULL AUTO_INCREMENT DEFAULT NULL,
+  `band_name` MEDIUMTEXT NULL DEFAULT NULL,
+  PRIMARY KEY (`id_band_type`)
+);
