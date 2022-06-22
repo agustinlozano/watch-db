@@ -1,7 +1,3 @@
--- ---
--- Data inserted into the DB
--- 
--- ---
 INSERT INTO "Pusher" ("id_pusher","pusher_type") VALUES (0,'other');
 INSERT INTO "Pusher" ("id_pusher","pusher_type") VALUES (1,'pump/classic');
 INSERT INTO "Pusher" ("id_pusher","pusher_type") VALUES (2,'screw-down');
@@ -58,6 +54,7 @@ INSERT INTO "Color" ("id_color","color_name") VALUES (8,'white');
 INSERT INTO "Color" ("id_color","color_name") VALUES (9,'gray');
 INSERT INTO "Color" ("id_color","color_name") VALUES (10,'brown');
 INSERT INTO "Color" ("id_color","color_name") VALUES (11,'cream');
+INSERT INTO "Color" ("id_color","color_name") VALUES (12,'blue');
 
 INSERT INTO "Band_type" ("id_band_type","band_name") VALUES (0,'other');
 INSERT INTO "Band_type" ("id_band_type","band_name") VALUES (1,'stitched leather');
@@ -102,6 +99,7 @@ INSERT INTO "Dial_type" ("id_dial_type","dial_name") VALUES (11,'sector');
 INSERT INTO "Dial_type" ("id_dial_type","dial_name") VALUES (12,'marquetry');
 INSERT INTO "Dial_type" ("id_dial_type","dial_name") VALUES (13,'lcd');
 INSERT INTO "Dial_type" ("id_dial_type","dial_name") VALUES (14,'analog');
+INSERT INTO "Dial_type" ("id_dial_type","dial_name") VALUES (15,'analog-digital');
 
 INSERT INTO "Index" ("id_index","index_type") VALUES (0,'other');
 INSERT INTO "Index" ("id_index","index_type") VALUES (1,'arabic');
@@ -114,6 +112,7 @@ INSERT INTO "Index" ("id_index","index_type") VALUES (7,'roman');
 INSERT INTO "Index" ("id_index","index_type") VALUES (8,'round');
 INSERT INTO "Index" ("id_index","index_type") VALUES (9,'stick');
 INSERT INTO "Index" ("id_index","index_type") VALUES (10,'digital');
+INSERT INTO "Index" ("id_index","index_type") VALUES (11,'applied');
 
 INSERT INTO "Hand" ("id_hand","hand_type") VALUES (0,'other');
 INSERT INTO "Hand" ("id_hand","hand_type") VALUES (1,'alpha');
@@ -207,6 +206,9 @@ INSERT INTO "Caseback" ("id_caseback","id_shape","id_caseback_design","id_materi
 INSERT INTO "Caseback" ("id_caseback","id_shape","id_caseback_design","id_material") VALUES (4,2,7,8);
 INSERT INTO "Caseback" ("id_caseback","id_shape","id_caseback_design","id_material") VALUES (5,1,2,2);
 INSERT INTO "Caseback" ("id_caseback","id_shape","id_caseback_design","id_material") VALUES (6,1,6,9);
+INSERT INTO "Caseback" ("id_caseback","id_shape","id_caseback_design","id_material") VALUES (7,1,6,9);
+INSERT INTO "Caseback" ("id_caseback","id_shape","id_caseback_design","id_material") VALUES (8,1,2,3);
+INSERT INTO "Caseback" ("id_caseback","id_shape","id_caseback_design","id_material") VALUES (9,1,2,3);
 INSERT INTO "Band" ("id_band","id_band_type","id_clasp","id_material","id_color") VALUES (0,15,9,8,7);
 INSERT INTO "Band" ("id_band","id_band_type","id_clasp","id_material","id_color") VALUES (1,11,1,3,2);
 INSERT INTO "Band" ("id_band","id_band_type","id_clasp","id_material","id_color") VALUES (2,10,7,3,2);
@@ -214,6 +216,9 @@ INSERT INTO "Band" ("id_band","id_band_type","id_clasp","id_material","id_color"
 INSERT INTO "Band" ("id_band","id_band_type","id_clasp","id_material","id_color") VALUES (4,15,9,8,8);
 INSERT INTO "Band" ("id_band","id_band_type","id_clasp","id_material","id_color") VALUES (5,8,9,0,5);
 INSERT INTO "Band" ("id_band","id_band_type","id_clasp","id_material","id_color") VALUES (6,10,2,3,2);
+INSERT INTO "Band" ("id_band","id_band_type","id_clasp","id_material","id_color") VALUES (7,3,1,10,10);
+INSERT INTO "Band" ("id_band","id_band_type","id_clasp","id_material","id_color") VALUES (8,7,3,0,12);
+INSERT INTO "Band" ("id_band","id_band_type","id_clasp","id_material","id_color") VALUES (9,10,1,2,2);
 
 INSERT INTO "Brand" ("id_brand","brand_name") VALUES (0,'other');
 INSERT INTO "Brand" ("id_brand","brand_name") VALUES (1,'Timex');
@@ -260,6 +265,7 @@ INSERT INTO "Brand" ("id_brand","brand_name") VALUES (41,'Tag Heuer');
 INSERT INTO "Brand" ("id_brand","brand_name") VALUES (42,'Tudor');
 INSERT INTO "Brand" ("id_brand","brand_name") VALUES (43,'Enicar');
 INSERT INTO "Brand" ("id_brand","brand_name") VALUES (44,'Lorus');
+INSERT INTO "Brand" ("id_brand","brand_name") VALUES (45,'Mido');
 
 INSERT INTO "Complication" ("id_complication","id_complication_name") VALUES (0,'other');
 INSERT INTO "Complication" ("id_complication","id_complication_name") VALUES (1,'date');
@@ -274,6 +280,8 @@ INSERT INTO "Complication" ("id_complication","id_complication_name") VALUES (9,
 INSERT INTO "Complication" ("id_complication","id_complication_name") VALUES (10,'calculator');
 INSERT INTO "Complication" ("id_complication","id_complication_name") VALUES (11,'calendar');
 INSERT INTO "Complication" ("id_complication","id_complication_name") VALUES (12,'tachymeter');
+INSERT INTO "Complication" ("id_complication","id_complication_name") VALUES (13,'GMT');
+INSERT INTO "Complication" ("id_complication","id_complication_name") VALUES (14,'sun & moon');
 
 INSERT INTO "Crown_type" ("id_crown_type","crown_name") VALUES (0,'other');
 INSERT INTO "Crown_type" ("id_crown_type","crown_name") VALUES (1,'Screw-down');
@@ -299,15 +307,25 @@ INSERT INTO "may_have_a_complication" ("id_watch","id_complication") VALUES (4,1
 INSERT INTO "may_have_a_complication" ("id_watch","id_complication") VALUES (5,1);
 INSERT INTO "may_have_a_complication" ("id_watch","id_complication") VALUES (6,2);
 INSERT INTO "may_have_a_complication" ("id_watch","id_complication") VALUES (6,12);
+INSERT INTO "may_have_a_complication" ("id_watch","id_complication") VALUES (8,13);
+INSERT INTO "may_have_a_complication" ("id_watch","id_complication") VALUES (9,1);
+INSERT INTO "may_have_a_complication" ("id_watch","id_complication") VALUES (9,2);
+INSERT INTO "may_have_a_complication" ("id_watch","id_complication") VALUES (9,6);
+INSERT INTO "may_have_a_complication" ("id_watch","id_complication") VALUES (9,11);
+INSERT INTO "may_have_a_complication" ("id_watch","id_complication") VALUES (7,1);
+INSERT INTO "may_have_a_complication" ("id_watch","id_complication") VALUES (7,14);
 INSERT INTO "Crown" ("id_crown","id_crown_type") VALUES (1,2);
 
-INSERT INTO "Basic_info" ("id_info","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (0,3,2,10,5,30,55.28);
+INSERT INTO "Basic_info" ("id_info","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (0,3,2,10,5,30,55.3);
 INSERT INTO "Basic_info" ("id_info","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (1,3,6,4,1,50,150);
 INSERT INTO "Basic_info" ("id_info","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (2,1,4,4,1,100,130);
 INSERT INTO "Basic_info" ("id_info","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (3,1,40,4,1,50,NULL);
 INSERT INTO "Basic_info" ("id_info","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (4,3,2,12,5,30,NULL);
 INSERT INTO "Basic_info" ("id_info","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (5,3,44,4,1,100,160);
 INSERT INTO "Basic_info" ("id_info","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (6,1,11,0,1,50,150);
+INSERT INTO "Basic_info" ("id_info","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (7,3,7,1,1,50,102);
+INSERT INTO "Basic_info" ("id_info","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (8,1,45,3,1,200,125);
+INSERT INTO "Basic_info" ("id_info","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (9,3,2,3,1,50,NULL);
 
 INSERT INTO "Case" ("id_case","id_crystal","id_material","id_color","id_pusher","id_shape","thickness","lug_width","lug_to_lug","id_movement","id_caseback","id_dial","id_band") VALUES (0,3,8,7,0,11,8.5,NULL,35.2,0,0,0,0);
 INSERT INTO "Case" ("id_case","id_crystal","id_material","id_color","id_pusher","id_shape","thickness","lug_width","lug_to_lug","id_movement","id_caseback","id_dial","id_band") VALUES (1,6,3,2,9,1,11.8,20.0,47.5,1,1,1,1);
@@ -316,6 +334,9 @@ INSERT INTO "Case" ("id_case","id_crystal","id_material","id_color","id_pusher",
 INSERT INTO "Case" ("id_case","id_crystal","id_material","id_color","id_pusher","id_shape","thickness","lug_width","lug_to_lug","id_movement","id_caseback","id_dial","id_band") VALUES (4,0,4,8,9,3,8.0,20.0,42.0,4,4,4,4);
 INSERT INTO "Case" ("id_case","id_crystal","id_material","id_color","id_pusher","id_shape","thickness","lug_width","lug_to_lug","id_movement","id_caseback","id_dial","id_band") VALUES (5,2,2,1,9,1,8.0,18.0,43.3,5,5,5,5);
 INSERT INTO "Case" ("id_case","id_crystal","id_material","id_color","id_pusher","id_shape","thickness","lug_width","lug_to_lug","id_movement","id_caseback","id_dial","id_band") VALUES (6,1,3,2,1,1,14.3,20.0,45.0,6,6,6,6);
+INSERT INTO "Case" ("id_case","id_crystal","id_material","id_color","id_pusher","id_shape","thickness","lug_width","lug_to_lug","id_movement","id_caseback","id_dial","id_band") VALUES (7,1,3,3,9,1,14.0,22.0,50.5,7,7,7,7);
+INSERT INTO "Case" ("id_case","id_crystal","id_material","id_color","id_pusher","id_shape","thickness","lug_width","lug_to_lug","id_movement","id_caseback","id_dial","id_band") VALUES (8,1,3,2,9,1,13.3,22.0,44.0,8,8,8,8);
+INSERT INTO "Case" ("id_case","id_crystal","id_material","id_color","id_pusher","id_shape","thickness","lug_width","lug_to_lug","id_movement","id_caseback","id_dial","id_band") VALUES (9,1,2,1,1,1,9.2,20.0,43.8,9,9,9,9);
 
 INSERT INTO "Movement" ("id_movement","id_movement_type","id_battery","battery_life") VALUES (0,3,3,100);
 INSERT INTO "Movement" ("id_movement","id_movement_type","id_battery","battery_life") VALUES (1,2,6,NULL);
@@ -324,6 +345,9 @@ INSERT INTO "Movement" ("id_movement","id_movement_type","id_battery","battery_l
 INSERT INTO "Movement" ("id_movement","id_movement_type","id_battery","battery_life") VALUES (4,3,3,150);
 INSERT INTO "Movement" ("id_movement","id_movement_type","id_battery","battery_life") VALUES (5,3,5,200);
 INSERT INTO "Movement" ("id_movement","id_movement_type","id_battery","battery_life") VALUES (6,2,6,NULL);
+INSERT INTO "Movement" ("id_movement","id_movement_type","id_battery","battery_life") VALUES (7,2,6,NULL);
+INSERT INTO "Movement" ("id_movement","id_movement_type","id_battery","battery_life") VALUES (8,2,6,NULL);
+INSERT INTO "Movement" ("id_movement","id_movement_type","id_battery","battery_life") VALUES (9,3,3,300);
 
 INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","luminance") VALUES (0,13,10,16,9,1);
 INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","luminance") VALUES (1,14,6,1,2,0);
@@ -332,3 +356,6 @@ INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","lu
 INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","luminance") VALUES (4,13,10,16,8,0);
 INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","luminance") VALUES (5,14,1,17,11,1);
 INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","luminance") VALUES (6,14,9,5,2,1);
+INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","luminance") VALUES (7,14,7,4,11,0);
+INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","luminance") VALUES (8,15,3,6,7,1);
+INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","luminance") VALUES (9,0,0,0,0,0);
