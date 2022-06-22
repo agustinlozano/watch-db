@@ -203,7 +203,7 @@ CREATE TABLE IF NOT EXISTS "Basic_info" (
 	"id_style"	INTEGER NOT NULL,
 	"id_gender"	INTEGER NOT NULL,
 	"water_resistance"	INTEGER NOT NULL,
-	"weight"	INTEGER,
+	"weight"	REAL,
 	PRIMARY KEY("id_info" AUTOINCREMENT),
 	FOREIGN KEY("id_manufactured_in") REFERENCES "Manufactured_in"("id_country"),
 	FOREIGN KEY("id_style") REFERENCES "Style"("id_style"),
