@@ -5,9 +5,9 @@
 
 ## Next work to do
 
-- POWER RESERVE isn't support yet.
-- Crown relation called ```may_have_a_crown``` is already unfilled.
-- Instructions to solve using SQL (10)
+- POWER RESERVE isn't supported yet.
+- The Crown relation named ```may_have_a_crown``` is still unfilled for every watch in the DB.
+- Instructions to solve using SQL (10).
 
 ## Docs
 These are the main tables in the DB: ```Case```, ```Basic_info```, ```Movement```, ```Dial```, ```Caseback```, and ```Band```. 
