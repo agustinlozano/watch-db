@@ -13,60 +13,60 @@
 These are the main tables in the DB: ```Case```, ```Basic_info```, ```Movement```, ```Dial```, ```Caseback```, and ```Band```. 
 | **Case**               | **Data Type**|
 | :------------          |  :-------:   |
-| "id_case"              |   Integer    |
-|	"id_crystal"           |   Integer    |
-|	"id_material"          |   Integer    |
-|	"id_color"             |   Integer    |
-|	"id_pusher"            |   Integer    |
-|	"id_shape"             |   Integer    |
-|	"thickness"            |   Float      |
-|	"lug_width"            |   Float      |
-|	"lug_to_lug"           |   Float      |
-|	"id_movement"          |   Integer    |
-|	"id_caseback"          |   Integer    |
-|	"id_dial"              |   Integer    |
-|	"id_band"              |   Integer    |
+| `id_case`              |   _Integer_  |
+|	`id_crystal`           |   _Integer_  |
+|	`id_material`          |   _Integer_  |
+|	`id_color`             |   _Integer_  |
+|	`id_pusher`            |   _Integer_  |
+|	`id_shape`             |   _Integer_  |
+|	`thickness`            |   _Float_    |
+|	`lug_width`            |   _Float_    |
+|	`lug_to_lug`           |   _Float_    |
+|	`id_movement`          |   _Integer_  |
+|	`id_caseback`          |   _Integer_  |
+|	`id_dial`              |   _Integer_  |
+|	`id_band`              |   _Integer_  |
 
 | **Basic_info**         | **Data Type**|
 | :------------          |  :-------:   |
-| "id_info"              |   Integer    |
-|	"id_manufactured_in"   |   Integer    |
-|	"id_brand"             |   Integer    |
-|	"id_style"             |   Integer    |
-|	"id_gender"            |   Integer    |
-|	"water_resistance"     |   Integer    |
-|	"weight"               |   Float      |
+| `id_info`              |   _Integer_  |
+|	`id_manufactured_in`   |   _Integer_  |
+|	`id_brand`             |   _Integer_  |
+|	`id_style`             |   _Integer_  |
+|	`id_gender`            |   _Integer_  |
+|	`water_resistance`     |   _Integer_  |
+|	`weight`               |   _Float_    |
 
 | **Movement**          | **Data Type**|
 | :------------         |   :-------:  |
-| "id_movement"         |   Integer    |
-|	"id_movement_type"    |   Integer    |
-|	"id_battery"          |   Integer    |
-|	"battery_life"        |   Integer    |
+| `id_movement`         |   _Integer_  |
+|	`id_movement_type`    |   _Integer_  |
+|	`id_battery`          |   _Integer_  |
+|	`battery_life`        |   _Integer_  |
 
 | **Dial**              | **Data Type**|
 | :------------         |  :-------:   |
-| "id_dial"             |   Integer    |
-|	"id_dial_type"        |   Integer    |
-|	"id_index"            |   Integer    |
-|	"id_hand"             |   Integer    |
-|	"id_color"            |   Integer    |
-|	"luminance"           |   Boolean    |
+| `id_dial`             |   _Integer_  |
+|	`id_dial_type`        |   _Integer_  |
+|	`id_index`            |   _Integer_  |
+|	`id_hand`             |   _Integer_  |
+|	`id_color`            |   _Integer_  |
+|	`luminance`           |   _Boolean_  |
 
 | **Caseback**          | **Data Type**|
 | :------------         |   :-------:  |
-| "id_caseback"         |   Integer    |
-|	"id_shape"            |   Integer    |
-|	"id_caseback_design"  |   Integer    |
-|	"id_material"         |   Integer    |
+| `id_caseback`         |   _Integer_  |
+|	`id_shape`            |   _Integer_  |
+|	`id_caseback_design`  |   _Integer_  |
+|	`id_material`         |   _Integer_  |
 
 | **Band**              | **Data Type**|
 | :------------         |  :-------:   |
-| "id_band"             |   Integer    |
-|	"id_band_type"        |   Integer    |
-|	"id_clasp"            |   Integer    |
-|	"id_material"         |   Integer    |
-|	"id_color"            |   Integer    |
+| `id_band`             |   _Integer_  |
+|	`id_band_type`        |   _Integer_  |
+|	`id_clasp`            |   _Integer_  |
+|	`id_material`         |   _Integer_  |
+|	`id_color`            |   _Integer_  |
 
 
 
