@@ -23,14 +23,14 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="0.35355339"
-     inkscape:cx="978.63578"
-     inkscape:cy="432.74935"
-     inkscape:window-width="780"
-     inkscape:window-height="729"
-     inkscape:window-x="622"
-     inkscape:window-y="0"
-     inkscape:window-maximized="0"
+     inkscape:zoom="0.5"
+     inkscape:cx="660"
+     inkscape:cy="580"
+     inkscape:window-width="1366"
+     inkscape:window-height="745"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
      inkscape:current-layer="layer1" />
   <defs
      id="defs2">
@@ -124,14 +124,14 @@
     <circle
        style="fill:#333333;fill-opacity:1;stroke-width:1.23467"
        id="path25034-0"
-       cx="882.45807"
-       cy="420.79404"
+       cx="875.95807"
+       cy="406.29404"
        r="5" />
     <circle
        style="fill:#333333;fill-opacity:1;stroke-width:1.23467"
        id="path25034-2"
-       cx="732.3053"
-       cy="423.78729"
+       cx="744.3053"
+       cy="403.78729"
        r="5" />
     <circle
        style="fill:#333333;fill-opacity:1;stroke-width:1.23467"
@@ -186,13 +186,13 @@
     <text
        xml:space="preserve"
        style="font-size:17.3333px;line-height:1.25;font-family:sans-serif;fill:#333333"
-       x="690.07544"
-       y="412.01715"
+       x="702.07544"
+       y="392.01715"
        id="text59936"><tspan
          sodipodi:role="line"
          id="tspan59934"
-         x="690.07544"
-         y="412.01715">id_shape</tspan></text>
+         x="702.07544"
+         y="392.01715">id_shape</tspan></text>
     <circle
        style="fill:#333333;fill-opacity:1;stroke-width:1.23467"
        id="path25034-2-4"
@@ -212,13 +212,13 @@
     <text
        xml:space="preserve"
        style="font-size:17.3333px;line-height:1.25;font-family:sans-serif;fill:#333333"
-       x="847.56708"
-       y="409.49979"
+       x="841.06708"
+       y="394.99979"
        id="text66640"><tspan
          sodipodi:role="line"
          id="tspan66638"
-         x="847.56708"
-         y="409.49979">id_pusher</tspan></text>
+         x="841.06708"
+         y="394.99979">id_pusher</tspan></text>
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        d="m 772.8969,571.94601 17.10972,-34.94429"
@@ -237,7 +237,7 @@
        inkscape:connection-end="#g25963" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 847.83794,457.00172 31.16475,-32.59385"
+       d="m 838.85778,457.00172 34.14794,-46.6725"
        id="path75568"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -245,7 +245,7 @@
        inkscape:connection-end="#path25034-0" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M 767.36704,457.00172 735.93512,427.22587"
+       d="M 781.57616,457.00172 747.17365,407.88265"
        id="path75570"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -521,19 +521,19 @@
     <circle
        style="fill:#333333;fill-opacity:1;stroke-width:1.23467"
        id="path25034-19-7-3-2"
-       cx="269.58139"
-       cy="954.01813"
+       cx="181.58139"
+       cy="957.01813"
        r="5" />
     <text
        xml:space="preserve"
        style="font-size:17.3333px;line-height:1.25;font-family:sans-serif;fill:#333333"
-       x="187.39697"
-       y="976.3537"
+       x="99.396973"
+       y="979.3537"
        id="text47742-9-2-8"><tspan
          sodipodi:role="line"
          id="tspan47740-9-5-5"
-         x="187.39697"
-         y="976.3537"
+         x="99.396973"
+         y="979.3537"
          style="font-size:17.3333px;fill:#333333">id_movement_type</tspan></text>
     <text
        xml:space="preserve"
@@ -585,7 +585,7 @@
        inkscape:connection-end="#path25034-1-6-4-3" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 269.3539,927.53431 0.18454,21.48408"
+       d="m 218.67979,927.53431 -33.1841,26.37294"
        id="path152775-7-27"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -2260,5 +2260,89 @@
        id="path13423-1"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0" />
+    <circle
+       style="fill:#333333;fill-opacity:1;stroke-width:1.23467"
+       id="path25034-2-8-4"
+       cx="613.96533"
+       cy="339.9697"
+       r="5" />
+    <text
+       xml:space="preserve"
+       style="font-size:17.3333px;line-height:1.25;font-family:sans-serif;fill:#333333"
+       x="575.73547"
+       y="328.19955"
+       id="text59936-6-5"><tspan
+         sodipodi:role="line"
+         id="tspan59934-35-6"
+         x="575.73547"
+         y="328.19955">diameter</tspan></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 617.86448,343.09959 759.7608,457.00172"
+       id="path2562"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-end="#g25963"
+       inkscape:connection-start="#path25034-2-8-4" />
+    <circle
+       style="fill:#333333;fill-opacity:1;stroke-width:1.23467"
+       id="path25034-19-7-7"
+       cx="1467.4357"
+       cy="563.97778"
+       r="5" />
+    <text
+       xml:space="preserve"
+       style="font-size:17.3333px;line-height:1.25;font-family:sans-serif;fill:#333333"
+       x="1447.837"
+       y="587.53522"
+       id="text47742-9-22"><tspan
+         sodipodi:role="line"
+         id="tspan47740-9-7"
+         x="1447.837"
+         y="587.53522"
+         style="font-size:17.3333px;fill:#333333">model</tspan><tspan
+         sodipodi:role="line"
+         x="1447.837"
+         y="609.20184"
+         style="font-size:17.3333px;fill:#333333"
+         id="tspan3658" /></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 1399.6918,537.18894 63.0943,24.9502"
+       id="path4098"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#g25963-0"
+       inkscape:connection-end="#path25034-19-7-7" />
+    <circle
+       style="fill:#333333;fill-opacity:1;stroke-width:1.23467"
+       id="path25034-19-7-3-2-8"
+       cx="364.67188"
+       cy="955.58875"
+       r="5" />
+    <text
+       xml:space="preserve"
+       style="font-size:17.3333px;line-height:1.25;font-family:sans-serif;fill:#333333"
+       x="300.48746"
+       y="977.92432"
+       id="text47742-9-2-8-2"><tspan
+         sodipodi:role="line"
+         id="tspan47740-9-5-5-5"
+         x="300.48746"
+         y="977.92432"
+         style="font-size:17.3333px;fill:#333333">power_reserve</tspan><tspan
+         sodipodi:role="line"
+         x="300.48746"
+         y="999.59094"
+         style="font-size:17.3333px;fill:#333333"
+         id="tspan5124" /></text>
+    <path
+       style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 360.59774,952.69037 325.2368,927.53431"
+       id="path4234"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="0"
+       inkscape:connection-start="#path25034-19-7-3-2-8"
+       inkscape:connection-end="#g25963-0-2-6" />
   </g>
 </svg>
