@@ -1,4 +1,3 @@
-
 INSERT INTO "Pusher" ("id_pusher","pusher_type") VALUES (0,'other');
 INSERT INTO "Pusher" ("id_pusher","pusher_type") VALUES (1,'pump/classic');
 INSERT INTO "Pusher" ("id_pusher","pusher_type") VALUES (2,'screw-down');
@@ -269,22 +268,6 @@ INSERT INTO "Brand" ("id_brand","brand_name") VALUES (43,'Enicar');
 INSERT INTO "Brand" ("id_brand","brand_name") VALUES (44,'Lorus');
 INSERT INTO "Brand" ("id_brand","brand_name") VALUES (45,'Mido');
 
-INSERT INTO "Complication" ("id_complication","id_complication_name") VALUES (0,'other');
-INSERT INTO "Complication" ("id_complication","id_complication_name") VALUES (1,'date');
-INSERT INTO "Complication" ("id_complication","id_complication_name") VALUES (2,'chronograp');
-INSERT INTO "Complication" ("id_complication","id_complication_name") VALUES (3,'moonphase');
-INSERT INTO "Complication" ("id_complication","id_complication_name") VALUES (4,'power reserve');
-INSERT INTO "Complication" ("id_complication","id_complication_name") VALUES (5,'jump hour');
-INSERT INTO "Complication" ("id_complication","id_complication_name") VALUES (6,'alarm');
-INSERT INTO "Complication" ("id_complication","id_complication_name") VALUES (7,'minute repeater');
-INSERT INTO "Complication" ("id_complication","id_complication_name") VALUES (8,'tourbillon');
-INSERT INTO "Complication" ("id_complication","id_complication_name") VALUES (9,'mode');
-INSERT INTO "Complication" ("id_complication","id_complication_name") VALUES (10,'calculator');
-INSERT INTO "Complication" ("id_complication","id_complication_name") VALUES (11,'calendar');
-INSERT INTO "Complication" ("id_complication","id_complication_name") VALUES (12,'tachymeter');
-INSERT INTO "Complication" ("id_complication","id_complication_name") VALUES (13,'GMT');
-INSERT INTO "Complication" ("id_complication","id_complication_name") VALUES (14,'sun & moon');
-
 INSERT INTO "Crown_type" ("id_crown_type","crown_name") VALUES (0,'other');
 INSERT INTO "Crown_type" ("id_crown_type","crown_name") VALUES (1,'Screw-down');
 INSERT INTO "Crown_type" ("id_crown_type","crown_name") VALUES (2,'Recessed');
@@ -305,8 +288,8 @@ INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","lu
 INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","luminance") VALUES (5,14,1,17,11,1);
 INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","luminance") VALUES (6,14,9,5,2,1);
 INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","luminance") VALUES (7,14,7,4,11,0);
-INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","luminance") VALUES (8,15,3,6,7,1);
-INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","luminance") VALUES (9,0,0,0,0,0);
+INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","luminance") VALUES (8,14,3,6,7,1);
+INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","luminance") VALUES (9,15,0,0,0,0);
 
 INSERT INTO "Basic_info" ("id_watch","model","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (0,'Casio F91W',3,2,10,5,30,55.3);
 INSERT INTO "Basic_info" ("id_watch","model","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (1,'Seiko Presage SRPB41',3,6,4,1,50,150.0);
@@ -361,3 +344,20 @@ INSERT INTO "Movement" ("id_movement","id_movement_type","id_battery","battery_l
 INSERT INTO "Movement" ("id_movement","id_movement_type","id_battery","battery_life","power_reserve") VALUES (7,2,6,NULL,40);
 INSERT INTO "Movement" ("id_movement","id_movement_type","id_battery","battery_life","power_reserve") VALUES (8,2,6,NULL,80);
 INSERT INTO "Movement" ("id_movement","id_movement_type","id_battery","battery_life","power_reserve") VALUES (9,3,3,300,NULL);
+
+INSERT INTO "Complication" ("id_complication","complication_name") VALUES (0,'other');
+INSERT INTO "Complication" ("id_complication","complication_name") VALUES (1,'date');
+INSERT INTO "Complication" ("id_complication","complication_name") VALUES (2,'chronograp');
+INSERT INTO "Complication" ("id_complication","complication_name") VALUES (3,'moonphase');
+INSERT INTO "Complication" ("id_complication","complication_name") VALUES (4,'power reserve');
+INSERT INTO "Complication" ("id_complication","complication_name") VALUES (5,'jump hour');
+INSERT INTO "Complication" ("id_complication","complication_name") VALUES (6,'alarm');
+INSERT INTO "Complication" ("id_complication","complication_name") VALUES (7,'minute repeater');
+INSERT INTO "Complication" ("id_complication","complication_name") VALUES (8,'tourbillon');
+INSERT INTO "Complication" ("id_complication","complication_name") VALUES (9,'mode');
+INSERT INTO "Complication" ("id_complication","complication_name") VALUES (10,'calculator');
+INSERT INTO "Complication" ("id_complication","complication_name") VALUES (11,'calendar');
+INSERT INTO "Complication" ("id_complication","complication_name") VALUES (12,'tachymeter');
+INSERT INTO "Complication" ("id_complication","complication_name") VALUES (13,'GMT');
+INSERT INTO "Complication" ("id_complication","complication_name") VALUES (14,'sun & moon');
+INSERT INTO "Complication" ("id_complication","complication_name") VALUES (15,'day');
