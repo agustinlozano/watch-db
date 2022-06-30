@@ -21,6 +21,7 @@ These are the main tables in the DB: ```Case```, ```Basic_info```, ```Movement``
 |	`id_color`             |   _Integer_  |
 |	`id_pusher`            |   _Integer_  |
 |	`id_shape`             |   _Integer_  |
+|	`diameter`             |   _Float_    |
 |	`thickness`            |   _Float_    |
 |	`lug_width`            |   _Float_    |
 |	`lug_to_lug`           |   _Float_    |
@@ -31,7 +32,8 @@ These are the main tables in the DB: ```Case```, ```Basic_info```, ```Movement``
 
 | **Basic_info**         | **Data Type**|
 | :------------          |  :-------:   |
-| `id_info`              |   _Integer_  |
+| `id_watch`             |   _Integer_  |
+| `model`                |   _String_   |
 |	`id_manufactured_in`   |   _Integer_  |
 |	`id_brand`             |   _Integer_  |
 |	`id_style`             |   _Integer_  |
@@ -45,6 +47,7 @@ These are the main tables in the DB: ```Case```, ```Basic_info```, ```Movement``
 |	`id_movement_type`    |   _Integer_  |
 |	`id_battery`          |   _Integer_  |
 |	`battery_life`        |   _Integer_  |
+|	`power_reserve`       |   _Integer_  |
 
 | **Dial**              | **Data Type**|
 | :------------         |  :-------:   |
