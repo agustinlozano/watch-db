@@ -23,9 +23,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:document-units="px"
      showgrid="false"
-     inkscape:zoom="2.8284271"
-     inkscape:cx="474.1151"
-     inkscape:cy="341.17902"
+     inkscape:zoom="1.4142136"
+     inkscape:cx="526.79456"
+     inkscape:cy="502.75293"
      inkscape:window-width="1366"
      inkscape:window-height="745"
      inkscape:window-x="-8"
@@ -196,13 +196,13 @@
     <text
        xml:space="preserve"
        style="font-size:17.3333px;line-height:1.25;font-family:sans-serif;fill:#333333"
-       x="557.71259"
+       x="585.71259"
        y="448.63773"
        id="text59936-8"><tspan
          sodipodi:role="line"
          id="tspan59934-7"
-         x="557.71259"
-         y="448.63773">lug_to_width</tspan></text>
+         x="585.71259"
+         y="448.63773">lug_width</tspan></text>
     <text
        xml:space="preserve"
        style="font-size:17.3333px;line-height:1.25;font-family:sans-serif;fill:#333333"
@@ -2446,7 +2446,7 @@
        inkscape:connection-end="#rect535873-46" />
     <path
        style="fill:none;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 845.493,664.1784 32.90601,5.64524"
+       d="m 845.493,664.17839 32.90601,5.64525"
        id="path7770"
        inkscape:connector-type="polyline"
        inkscape:connector-curvature="0"
@@ -2541,7 +2541,7 @@
        y="331.98663"
        id="text55637"><tspan
          sodipodi:role="line"
-         id="tspan55635"></tspan></text>
+         id="tspan55635" /></text>
     <text
        xml:space="preserve"
        style="font-size:17.3333px;line-height:1.25;font-family:sans-serif;fill:#333333"
