@@ -272,13 +272,34 @@ INSERT INTO "Crown_type" ("id_crown_type","crown_name") VALUES (0,'other');
 INSERT INTO "Crown_type" ("id_crown_type","crown_name") VALUES (1,'Screw-down');
 INSERT INTO "Crown_type" ("id_crown_type","crown_name") VALUES (2,'Recessed');
 INSERT INTO "Crown_type" ("id_crown_type","crown_name") VALUES (3,'Regular ');
+INSERT INTO "Crown_type" ("id_crown_type","crown_name") VALUES (4,'Non Screw-down');
+INSERT INTO "Crown_type" ("id_crown_type","crown_name") VALUES (5,'Protected');
 
 INSERT INTO "Crown_function" ("id_crown_function","function_name") VALUES (0,'other');
 INSERT INTO "Crown_function" ("id_crown_function","function_name") VALUES (1,'set time');
 INSERT INTO "Crown_function" ("id_crown_function","function_name") VALUES (2,'wind');
 INSERT INTO "Crown_function" ("id_crown_function","function_name") VALUES (3,'set date');
 INSERT INTO "Crown_function" ("id_crown_function","function_name") VALUES (4,'hack');
-INSERT INTO "Crown" ("id_crown","id_crown_type") VALUES (1,2);
+INSERT INTO "Crown_function" ("id_crown_function","function_name") VALUES (5,'GMT');
+
+INSERT INTO "has_a_crown_func" ("id_crown","id_function") VALUES (1,1);
+INSERT INTO "has_a_crown_func" ("id_crown","id_function") VALUES (2,1);
+INSERT INTO "has_a_crown_func" ("id_crown","id_function") VALUES (3,1);
+INSERT INTO "has_a_crown_func" ("id_crown","id_function") VALUES (5,1);
+INSERT INTO "has_a_crown_func" ("id_crown","id_function") VALUES (6,1);
+INSERT INTO "has_a_crown_func" ("id_crown","id_function") VALUES (6,2);
+INSERT INTO "has_a_crown_func" ("id_crown","id_function") VALUES (7,1);
+INSERT INTO "has_a_crown_func" ("id_crown","id_function") VALUES (7,2);
+INSERT INTO "has_a_crown_func" ("id_crown","id_function") VALUES (8,1);
+INSERT INTO "has_a_crown_func" ("id_crown","id_function") VALUES (8,5);
+
+INSERT INTO "Crown" ("id_crown","id_crown_type") VALUES (1,4);
+INSERT INTO "Crown" ("id_crown","id_crown_type") VALUES (2,3);
+INSERT INTO "Crown" ("id_crown","id_crown_type") VALUES (3,1);
+INSERT INTO "Crown" ("id_crown","id_crown_type") VALUES (5,5);
+INSERT INTO "Crown" ("id_crown","id_crown_type") VALUES (6,1);
+INSERT INTO "Crown" ("id_crown","id_crown_type") VALUES (7,3);
+INSERT INTO "Crown" ("id_crown","id_crown_type") VALUES (8,1);
 
 INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","luminance") VALUES (0,13,10,16,9,1);
 INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","luminance") VALUES (1,14,6,1,2,0);
@@ -323,6 +344,14 @@ INSERT INTO "may_have_a_complication" ("id_watch","id_complication") VALUES (9,1
 INSERT INTO "may_have_a_complication" ("id_watch","id_complication") VALUES (7,1);
 INSERT INTO "may_have_a_complication" ("id_watch","id_complication") VALUES (7,14);
 
+INSERT INTO "may_have_a_crown" ("id_watch","id_crown") VALUES (1,1);
+INSERT INTO "may_have_a_crown" ("id_watch","id_crown") VALUES (2,2);
+INSERT INTO "may_have_a_crown" ("id_watch","id_crown") VALUES (3,3);
+INSERT INTO "may_have_a_crown" ("id_watch","id_crown") VALUES (5,5);
+INSERT INTO "may_have_a_crown" ("id_watch","id_crown") VALUES (6,6);
+INSERT INTO "may_have_a_crown" ("id_watch","id_crown") VALUES (7,7);
+INSERT INTO "may_have_a_crown" ("id_watch","id_crown") VALUES (8,8);
+
 INSERT INTO "Case" ("id_case","id_crystal","id_material","id_color","id_pusher","id_shape","thickness","lug_width","lug_to_lug","diameter","id_movement","id_caseback","id_dial","id_band") VALUES (0,3,8,7,0,11,8.5,NULL,35.2,NULL,0,0,0,0);
 INSERT INTO "Case" ("id_case","id_crystal","id_material","id_color","id_pusher","id_shape","thickness","lug_width","lug_to_lug","diameter","id_movement","id_caseback","id_dial","id_band") VALUES (1,6,3,2,9,1,11.8,20.0,47.5,41.0,1,1,1,1);
 INSERT INTO "Case" ("id_case","id_crystal","id_material","id_color","id_pusher","id_shape","thickness","lug_width","lug_to_lug","diameter","id_movement","id_caseback","id_dial","id_band") VALUES (2,1,3,2,9,1,10.5,12.0,44.25,42.0,2,2,2,2);
@@ -361,3 +390,15 @@ INSERT INTO "Complication" ("id_complication","complication_name") VALUES (12,'t
 INSERT INTO "Complication" ("id_complication","complication_name") VALUES (13,'GMT');
 INSERT INTO "Complication" ("id_complication","complication_name") VALUES (14,'sun & moon');
 INSERT INTO "Complication" ("id_complication","complication_name") VALUES (15,'day');
+
+INSERT INTO "Bezel" ("id_bezel","bezel_type") VALUES (0,'other');
+INSERT INTO "Bezel" ("id_bezel","bezel_type") VALUES (1,'Count-Up');
+INSERT INTO "Bezel" ("id_bezel","bezel_type") VALUES (2,'Countdown');
+INSERT INTO "Bezel" ("id_bezel","bezel_type") VALUES (3,'GMT');
+INSERT INTO "Bezel" ("id_bezel","bezel_type") VALUES (4,'Tachymeter');
+INSERT INTO "Bezel" ("id_bezel","bezel_type") VALUES (5,'Slide Rule');
+INSERT INTO "Bezel" ("id_bezel","bezel_type") VALUES (6,'Compass');
+INSERT INTO "Bezel" ("id_bezel","bezel_type") VALUES (7,'Swimming');
+
+INSERT INTO "may_have_a_bezel" ("id_watch","id_bezel") VALUES (8,3);
+INSERT INTO "may_have_a_bezel" ("id_watch","id_bezel") VALUES (6,0);
