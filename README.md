@@ -5,11 +5,13 @@
 
 ## Next work to do
 
-- POWER RESERVE isn't supported yet.
-- The Crown relation named ```may_have_a_crown``` is still unfilled for every watch in the DB.
-- Instructions to solve using SQL (10).
-- Build a REST API in [ExpressJS](https://expressjs.com/ "ExpressJS") that can support CRUD functions.
-- Build a frontend that can render all the information.
+- POWER RESERVE isn't supported yet. ✔
+- The Crown relation named ```may_have_a_crown``` is still unfilled for every watch in the DB. ✔
+- Instructions to solve using SQL (10). ✔
+- Watch complications. ✔
+- Bezel support. ✔
+- Build a REST API in [ExpressJS](https://expressjs.com/ "ExpressJS") that can support CRUD functions. ❌
+- Build a frontend that can render all the information. ❌
 
 ## Docs
 These are the main tables in the DB: ```Case```, ```Basic_info```, ```Movement```, ```Dial```, ```Caseback```, and ```Band```. 
