@@ -6,9 +6,9 @@
 ## Next work to do
 
 - POWER RESERVE isn't supported yet. ✔
-- The Crown relation named ```may_have_a_crown``` is still unfilled for every watch in the DB. ✔
+- The Crown relation named `may_have_a_crown` is still unfilled for every watch in the DB. ✔
 - Instructions to solve using SQL (10). ✔
-- Watch complications. ✔
+- The watch complication relation named `may_have_a_complication`. ✔
 - Bezel support. ✔
 - Build a REST API in [ExpressJS](https://expressjs.com/ "ExpressJS") that can support CRUD functions. ❌
 - Build a frontend that can render all the information. ❌
