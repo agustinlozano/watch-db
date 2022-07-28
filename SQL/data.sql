@@ -41,6 +41,7 @@ INSERT INTO "Material" ("id_material","material_type") VALUES (7,'tungsten');
 INSERT INTO "Material" ("id_material","material_type") VALUES (8,'plastic');
 INSERT INTO "Material" ("id_material","material_type") VALUES (9,'crystal');
 INSERT INTO "Material" ("id_material","material_type") VALUES (10,'leather');
+INSERT INTO "Material" ("id_material","material_type") VALUES (11,'platinum');
 
 INSERT INTO "Color" ("id_color","color_name") VALUES (0,'other');
 INSERT INTO "Color" ("id_color","color_name") VALUES (1,'siver');
@@ -209,6 +210,7 @@ INSERT INTO "Caseback" ("id_caseback","id_shape","id_caseback_design","id_materi
 INSERT INTO "Caseback" ("id_caseback","id_shape","id_caseback_design","id_material") VALUES (7,1,6,9);
 INSERT INTO "Caseback" ("id_caseback","id_shape","id_caseback_design","id_material") VALUES (8,1,2,3);
 INSERT INTO "Caseback" ("id_caseback","id_shape","id_caseback_design","id_material") VALUES (9,1,2,3);
+INSERT INTO "Caseback" ("id_caseback","id_shape","id_caseback_design","id_material") VALUES (10,1,1,10);
 
 INSERT INTO "Band" ("id_band","id_band_type","id_clasp","id_material","id_color") VALUES (0,15,9,8,7);
 INSERT INTO "Band" ("id_band","id_band_type","id_clasp","id_material","id_color") VALUES (1,11,1,3,2);
@@ -220,6 +222,7 @@ INSERT INTO "Band" ("id_band","id_band_type","id_clasp","id_material","id_color"
 INSERT INTO "Band" ("id_band","id_band_type","id_clasp","id_material","id_color") VALUES (7,3,1,10,10);
 INSERT INTO "Band" ("id_band","id_band_type","id_clasp","id_material","id_color") VALUES (8,7,3,0,12);
 INSERT INTO "Band" ("id_band","id_band_type","id_clasp","id_material","id_color") VALUES (9,10,1,2,2);
+INSERT INTO "Band" ("id_band","id_band_type","id_clasp","id_material","id_color") VALUES (10,3,9,11,7);
 
 INSERT INTO "Brand" ("id_brand","brand_name") VALUES (0,'other');
 INSERT INTO "Brand" ("id_brand","brand_name") VALUES (1,'Timex');
@@ -292,6 +295,7 @@ INSERT INTO "has_a_crown_func" ("id_crown","id_function") VALUES (7,1);
 INSERT INTO "has_a_crown_func" ("id_crown","id_function") VALUES (7,2);
 INSERT INTO "has_a_crown_func" ("id_crown","id_function") VALUES (8,1);
 INSERT INTO "has_a_crown_func" ("id_crown","id_function") VALUES (8,5);
+INSERT INTO "has_a_crown_func" ("id_crown","id_function") VALUES (9,2);
 
 INSERT INTO "Crown" ("id_crown","id_crown_type") VALUES (1,4);
 INSERT INTO "Crown" ("id_crown","id_crown_type") VALUES (2,3);
@@ -300,6 +304,7 @@ INSERT INTO "Crown" ("id_crown","id_crown_type") VALUES (5,5);
 INSERT INTO "Crown" ("id_crown","id_crown_type") VALUES (6,1);
 INSERT INTO "Crown" ("id_crown","id_crown_type") VALUES (7,3);
 INSERT INTO "Crown" ("id_crown","id_crown_type") VALUES (8,1);
+INSERT INTO "Crown" ("id_crown","id_crown_type") VALUES (9,1);
 
 INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","luminance") VALUES (0,13,10,16,9,1);
 INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","luminance") VALUES (1,14,6,1,2,0);
@@ -311,17 +316,19 @@ INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","lu
 INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","luminance") VALUES (7,14,7,4,11,0);
 INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","luminance") VALUES (8,14,3,6,7,1);
 INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","luminance") VALUES (9,15,0,0,0,0);
+INSERT INTO "Dial" ("id_dial","id_dial_type","id_index","id_hand","id_color","luminance")
 
-INSERT INTO "Basic_info" ("id_watch","model","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (0,'Casio F91W',3,2,10,5,30,55.3);
-INSERT INTO "Basic_info" ("id_watch","model","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (1,'Seiko Presage SRPB41',3,6,4,1,50,150.0);
-INSERT INTO "Basic_info" ("id_watch","model","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (2,'Tissot PRX Automatic',1,4,4,1,100,130.0);
-INSERT INTO "Basic_info" ("id_watch","model","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (3,'Hamilton Khaki Field Auto 38',1,40,4,1,50,NULL);
-INSERT INTO "Basic_info" ("id_watch","model","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (4,'Casio Databank CA53W',3,2,12,5,30,NULL);
-INSERT INTO "Basic_info" ("id_watch","model","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (5,'Lorus Titanium RXD425L8',3,44,4,1,100,160.0);
-INSERT INTO "Basic_info" ("id_watch","model","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (6,'Omega Speedmaster Professional',1,11,0,1,50,150.0);
-INSERT INTO "Basic_info" ("id_watch","model","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (7,'Orient Sun and Moon',3,7,1,1,50,102.0);
-INSERT INTO "Basic_info" ("id_watch","model","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (8,'Mido Ocean Star GMT',1,45,3,1,200,125.0);
-INSERT INTO "Basic_info" ("id_watch","model","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (9,'Casio Lineage LCW-M170TD-1AJF',3,2,3,1,50,NULL);
+INSERT INTO "Basic_info" ("id_watch","model","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (0,'F91W',3,2,10,5,30,55.3);
+INSERT INTO "Basic_info" ("id_watch","model","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (1,'Presage SRPB41',3,6,4,1,50,150.0);
+INSERT INTO "Basic_info" ("id_watch","model","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (2,'PRX Automatic',1,4,4,1,100,130.0);
+INSERT INTO "Basic_info" ("id_watch","model","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (3,'Khaki Field Auto 38',1,40,4,1,50,NULL);
+INSERT INTO "Basic_info" ("id_watch","model","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (4,'Databank CA53W',3,2,12,5,30,NULL);
+INSERT INTO "Basic_info" ("id_watch","model","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (5,'Titanium RXD425L8',3,44,4,1,100,160.0);
+INSERT INTO "Basic_info" ("id_watch","model","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (6,'Speedmaster Professional',1,11,0,1,50,150.0);
+INSERT INTO "Basic_info" ("id_watch","model","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (7,'Sun and Moon',3,7,1,1,50,102.0);
+INSERT INTO "Basic_info" ("id_watch","model","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (8,'Ocean Star GMT',1,45,3,1,200,125.0);
+INSERT INTO "Basic_info" ("id_watch","model","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (9,'Lineage LCW-M170TD-1AJF',3,2,3,1,50,NULL);
+INSERT INTO "Basic_info" ("id_watch","model","id_manufactured_in","id_brand","id_style","id_gender","water_resistance","weight") VALUES (10,'Perpetual Calendar 5140P-013',1,6,1,1,30,NULL);
 
 INSERT INTO "may_have_a_complication" ("id_watch","id_complication") VALUES (0,6);
 INSERT INTO "may_have_a_complication" ("id_watch","id_complication") VALUES (0,9);
@@ -343,6 +350,8 @@ INSERT INTO "may_have_a_complication" ("id_watch","id_complication") VALUES (9,6
 INSERT INTO "may_have_a_complication" ("id_watch","id_complication") VALUES (9,11);
 INSERT INTO "may_have_a_complication" ("id_watch","id_complication") VALUES (7,1);
 INSERT INTO "may_have_a_complication" ("id_watch","id_complication") VALUES (7,14);
+INSERT INTO "may_have_a_complication" ("id_watch","id_complication") VALUES (10,16);
+INSERT INTO "may_have_a_complication" ("id_watch","id_complication") VALUES (10,14);
 
 INSERT INTO "may_have_a_crown" ("id_watch","id_crown") VALUES (1,1);
 INSERT INTO "may_have_a_crown" ("id_watch","id_crown") VALUES (2,2);
@@ -351,6 +360,7 @@ INSERT INTO "may_have_a_crown" ("id_watch","id_crown") VALUES (5,5);
 INSERT INTO "may_have_a_crown" ("id_watch","id_crown") VALUES (6,6);
 INSERT INTO "may_have_a_crown" ("id_watch","id_crown") VALUES (7,7);
 INSERT INTO "may_have_a_crown" ("id_watch","id_crown") VALUES (8,8);
+INSERT INTO "may_have_a_crown" ("id_watch","id_crown") VALUES (10,9);
 
 INSERT INTO "Case" ("id_case","id_crystal","id_material","id_color","id_pusher","id_shape","thickness","lug_width","lug_to_lug","diameter","id_movement","id_caseback","id_dial","id_band") VALUES (0,3,8,7,0,11,8.5,NULL,35.2,NULL,0,0,0,0);
 INSERT INTO "Case" ("id_case","id_crystal","id_material","id_color","id_pusher","id_shape","thickness","lug_width","lug_to_lug","diameter","id_movement","id_caseback","id_dial","id_band") VALUES (1,6,3,2,9,1,11.8,20.0,47.5,41.0,1,1,1,1);
@@ -362,6 +372,7 @@ INSERT INTO "Case" ("id_case","id_crystal","id_material","id_color","id_pusher",
 INSERT INTO "Case" ("id_case","id_crystal","id_material","id_color","id_pusher","id_shape","thickness","lug_width","lug_to_lug","diameter","id_movement","id_caseback","id_dial","id_band") VALUES (7,1,3,3,9,1,14.0,22.0,50.5,42.5,7,7,7,7);
 INSERT INTO "Case" ("id_case","id_crystal","id_material","id_color","id_pusher","id_shape","thickness","lug_width","lug_to_lug","diameter","id_movement","id_caseback","id_dial","id_band") VALUES (8,1,3,2,9,1,13.3,22.0,44.0,44.0,8,8,8,8);
 INSERT INTO "Case" ("id_case","id_crystal","id_material","id_color","id_pusher","id_shape","thickness","lug_width","lug_to_lug","diameter","id_movement","id_caseback","id_dial","id_band") VALUES (9,1,2,1,1,1,9.2,20.0,43.8,39.5,9,9,9,9);
+INSERT INTO "Case" ("id_case","id_crystal","id_material","id_color","id_pusher","id_shape","thickness","lug_width","lug_to_lug","diameter","id_movement","id_caseback","id_dial","id_band") VALUES (10,1,11,2,9,1,11.3,21.0,43.0,37.0,10,10,10,10)
 
 INSERT INTO "Movement" ("id_movement","id_movement_type","id_battery","battery_life","power_reserve") VALUES (0,3,3,100,NULL);
 INSERT INTO "Movement" ("id_movement","id_movement_type","id_battery","battery_life","power_reserve") VALUES (1,2,6,NULL,40);
@@ -373,6 +384,7 @@ INSERT INTO "Movement" ("id_movement","id_movement_type","id_battery","battery_l
 INSERT INTO "Movement" ("id_movement","id_movement_type","id_battery","battery_life","power_reserve") VALUES (7,2,6,NULL,40);
 INSERT INTO "Movement" ("id_movement","id_movement_type","id_battery","battery_life","power_reserve") VALUES (8,2,6,NULL,80);
 INSERT INTO "Movement" ("id_movement","id_movement_type","id_battery","battery_life","power_reserve") VALUES (9,3,3,300,NULL);
+INSERT INTO "Movement" ("id_movement","id_movement_type","id_battery","battery_life","power_reserve") VALUES (10,2,6,NULL,75);
 
 INSERT INTO "Complication" ("id_complication","complication_name") VALUES (0,'other');
 INSERT INTO "Complication" ("id_complication","complication_name") VALUES (1,'date');
@@ -390,6 +402,7 @@ INSERT INTO "Complication" ("id_complication","complication_name") VALUES (12,'t
 INSERT INTO "Complication" ("id_complication","complication_name") VALUES (13,'GMT');
 INSERT INTO "Complication" ("id_complication","complication_name") VALUES (14,'sun & moon');
 INSERT INTO "Complication" ("id_complication","complication_name") VALUES (15,'day');
+INSERT INTO "Complication" ("id_complication","complication_name") VALUES (16,'perpetual calendar');
 
 INSERT INTO "Bezel" ("id_bezel","bezel_type") VALUES (0,'other');
 INSERT INTO "Bezel" ("id_bezel","bezel_type") VALUES (1,'Count-Up');

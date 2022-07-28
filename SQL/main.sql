@@ -150,25 +150,25 @@ CREATE TABLE IF NOT EXISTS "Complication" (
 CREATE TABLE IF NOT EXISTS "may_have_a_complication" (
 	"id_watch"	INTEGER NOT NULL,
 	"id_complication"	INTEGER NOT NULL,
+	PRIMARY KEY("id_watch","id_complication"),
 	FOREIGN KEY("id_watch") REFERENCES "Basic_info"("id_watch"),
-	FOREIGN KEY("id_complication") REFERENCES "Complication"("id_complication"),
-	PRIMARY KEY("id_watch","id_complication")
+	FOREIGN KEY("id_complication") REFERENCES "Complication"("id_complication")
 );
 
 CREATE TABLE IF NOT EXISTS "may_have_a_crown" (
 	"id_watch"	INTEGER NOT NULL,
 	"id_crown"	INTEGER NOT NULL,
-	FOREIGN KEY("id_crown") REFERENCES "Crown"("id_crown"),
+	PRIMARY KEY("id_watch","id_crown"),
 	FOREIGN KEY("id_watch") REFERENCES "Case"("id_case"),
-	PRIMARY KEY("id_watch","id_crown")
+	FOREIGN KEY("id_crown") REFERENCES "Crown"("id_crown")
 );
 
 CREATE TABLE IF NOT EXISTS "has_a_crown_func" (
 	"id_crown"	INTEGER NOT NULL,
 	"id_function"	INTEGER NOT NULL,
-	PRIMARY KEY("id_function","id_crown"),
 	FOREIGN KEY("id_function") REFERENCES "Crown_function"("id_crown_function"),
-	FOREIGN KEY("id_crown") REFERENCES "Crown"("id_crown")
+	FOREIGN KEY("id_crown") REFERENCES "Crown"("id_crown"),
+	PRIMARY KEY("id_function","id_crown")
 );
 
 CREATE TABLE IF NOT EXISTS "may_have_a_bezel" (
@@ -192,11 +192,11 @@ CREATE TABLE IF NOT EXISTS "Basic_info" (
 	"id_gender"	INTEGER NOT NULL,
 	"water_resistance"	INTEGER NOT NULL,
 	"weight"	REAL,
-	FOREIGN KEY("id_gender") REFERENCES "Gender"("id_gender"),
-	FOREIGN KEY("id_brand") REFERENCES "Brand"("id_brand"),
+	PRIMARY KEY("id_watch" AUTOINCREMENT),
 	FOREIGN KEY("id_style") REFERENCES "Style"("id_style"),
 	FOREIGN KEY("id_manufactured_in") REFERENCES "Manufactured_in"("id_country"),
-	PRIMARY KEY("id_watch" AUTOINCREMENT)
+	FOREIGN KEY("id_gender") REFERENCES "Gender"("id_gender"),
+	FOREIGN KEY("id_brand") REFERENCES "Brand"("id_brand")
 );
 
 CREATE TABLE IF NOT EXISTS "Case" (
@@ -214,17 +214,17 @@ CREATE TABLE IF NOT EXISTS "Case" (
 	"id_caseback"	INTEGER NOT NULL,
 	"id_dial"	INTEGER NOT NULL,
 	"id_band"	INTEGER NOT NULL,
-	FOREIGN KEY("id_band") REFERENCES "Band"("id_band"),
-	FOREIGN KEY("id_caseback") REFERENCES "Caseback"("id_caseback"),
-	FOREIGN KEY("id_case") REFERENCES "Basic_info"("id_watch"),
-	FOREIGN KEY("id_pusher") REFERENCES "Pusher"("id_pusher"),
-	FOREIGN KEY("id_color") REFERENCES "Color"("id_color"),
-	FOREIGN KEY("id_dial") REFERENCES "Dial"("id_dial"),
-	FOREIGN KEY("id_crystal") REFERENCES "Crystal"("id_crystal"),
-	FOREIGN KEY("id_material") REFERENCES "Material"("id_material"),
-	FOREIGN KEY("id_movement") REFERENCES "Movement"("id_movement"),
+	PRIMARY KEY("id_case" AUTOINCREMENT),
 	FOREIGN KEY("id_shape") REFERENCES "Shape"("id_shape"),
-	PRIMARY KEY("id_case" AUTOINCREMENT)
+	FOREIGN KEY("id_crystal") REFERENCES "Crystal"("id_crystal"),
+	FOREIGN KEY("id_case") REFERENCES "Basic_info"("id_watch"),
+	FOREIGN KEY("id_dial") REFERENCES "Dial"("id_dial"),
+	FOREIGN KEY("id_movement") REFERENCES "Movement"("id_movement"),
+	FOREIGN KEY("id_band") REFERENCES "Band"("id_band"),
+	FOREIGN KEY("id_pusher") REFERENCES "Pusher"("id_pusher"),
+	FOREIGN KEY("id_material") REFERENCES "Material"("id_material"),
+	FOREIGN KEY("id_caseback") REFERENCES "Caseback"("id_caseback"),
+	FOREIGN KEY("id_color") REFERENCES "Color"("id_color")
 );
 
 CREATE TABLE IF NOT EXISTS "Movement" (
@@ -233,9 +233,9 @@ CREATE TABLE IF NOT EXISTS "Movement" (
 	"id_battery"	INTEGER NOT NULL,
 	"battery_life"	INTEGER,
 	"power_reserve"	INTEGER,
-	FOREIGN KEY("id_battery") REFERENCES "Battery"("id_battery"),
+	PRIMARY KEY("id_movement" AUTOINCREMENT),
 	FOREIGN KEY("id_movement_type") REFERENCES "Movement_type"("id_movement_type"),
-	PRIMARY KEY("id_movement" AUTOINCREMENT)
+	FOREIGN KEY("id_battery") REFERENCES "Battery"("id_battery")
 );
 
 CREATE TABLE IF NOT EXISTS "Dial" (
@@ -245,11 +245,11 @@ CREATE TABLE IF NOT EXISTS "Dial" (
 	"id_hand"	INTEGER NOT NULL,
 	"id_color"	INTEGER NOT NULL,
 	"luminance"	INTEGER NOT NULL,
+	FOREIGN KEY("id_color") REFERENCES "Color"("id_color"),
 	FOREIGN KEY("id_dial_type") REFERENCES "Dial_type"("id_dial_type"),
 	FOREIGN KEY("id_index") REFERENCES "Index"("id_index"),
-	FOREIGN KEY("id_hand") REFERENCES "Hand"("id_hand"),
-	FOREIGN KEY("id_color") REFERENCES "Color"("id_color"),
-	PRIMARY KEY("id_dial" AUTOINCREMENT)
+	PRIMARY KEY("id_dial" AUTOINCREMENT),
+	FOREIGN KEY("id_hand") REFERENCES "Hand"("id_hand")
 );
 
 CREATE TABLE IF NOT EXISTS "Caseback" (
@@ -257,22 +257,23 @@ CREATE TABLE IF NOT EXISTS "Caseback" (
 	"id_shape"	INTEGER NOT NULL,
 	"id_caseback_design"	INTEGER NOT NULL,
 	"id_material"	INTEGER NOT NULL,
-	PRIMARY KEY("id_caseback" AUTOINCREMENT),
 	FOREIGN KEY("id_shape") REFERENCES "Shape"("id_shape"),
+	FOREIGN KEY("id_material") REFERENCES "Material"("id_material"),
 	FOREIGN KEY("id_caseback_design") REFERENCES "Backcase_design"("id_backcase_design"),
-	FOREIGN KEY("id_material") REFERENCES "Material"("id_material")
+	PRIMARY KEY("id_caseback" AUTOINCREMENT)
 );
+
 CREATE TABLE IF NOT EXISTS "Band" (
 	"id_band"	INTEGER NOT NULL,
 	"id_band_type"	INTEGER NOT NULL,
 	"id_clasp"	INTEGER NOT NULL,
 	"id_material"	INTEGER NOT NULL,
 	"id_color"	INTEGER NOT NULL,
-	PRIMARY KEY("id_band" AUTOINCREMENT),
-	FOREIGN KEY("id_band_type") REFERENCES "Band_type"("id_band_type"),
-	FOREIGN KEY("id_material") REFERENCES "Material"("id_material"),
 	FOREIGN KEY("id_color") REFERENCES "Color"("id_color"),
-	FOREIGN KEY("id_clasp") REFERENCES "Clasp"("id_clasp")
+	FOREIGN KEY("id_material") REFERENCES "Material"("id_material"),
+	FOREIGN KEY("id_clasp") REFERENCES "Clasp"("id_clasp"),
+	FOREIGN KEY("id_band_type") REFERENCES "Band_type"("id_band_type"),
+	PRIMARY KEY("id_band" AUTOINCREMENT)
 );
 
 -- ---
