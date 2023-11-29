@@ -12,7 +12,7 @@
 - The watch complication relation named `may_have_a_complication`. ✔
 - Bezel support. ✔
 - Build a REST API in [ExpressJS](https://expressjs.com/ "ExpressJS") that can support CRUD functions. ❌
-- Build a frontend that can render all the information. ❌
+- Build a frontend and render all the information. ❌
 
 ## Docs
 These are the main tables in the DB: ```Case```, ```Basic_info```, ```Movement```, ```Dial```, ```Caseback```, and ```Band```. 
